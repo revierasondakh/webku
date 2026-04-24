@@ -20,23 +20,22 @@
           color: #fff;
           padding: 20px 0;
           text-align: center;
+          margin-bottom: 10px;
       }
 
       .menu {
           background-color: #417aa8;
           height: 50px;
           line-height: 50px;
-          position: relative;
-          width: 90%;
+          width: 100%;
           margin: 0 auto;
-          padding: 0 auto;
           overflow: hidden;
       }
 
       .menu ul {
           list-style: none;
           margin: 0;
-          padding: 0;
+          padding: 0 2pc;
       }
 
       .menu ul li a {
@@ -49,12 +48,37 @@
       }
 
       .menu ul li a:hover {
-          background-color: #4b88bb;
-          display: block;
+          color: #000080;
       }
 
-      .content, .sidebar, .footer {
+      .main-container {
+          width: 95%;
+          margin: 20px auto;
+          overflow: hidden;
+      }
+
+      .content {
+          float: left;
+          width: 65%;
+          padding: 10px;
+      }
+
+      .post-box {
+          border: 1px solid #417aa8;
           padding: 20px;
+          margin-bottom: 20px;
+      }
+
+      .sidebar {
+          float: right;
+          width: 25%;
+          padding: 10px;
+          border-left: 1px solid #ccc;
+      }
+
+      .sidebar h3 {
+          border-bottom: 1px solid #333;
+          padding-bottom: 5px;
       }
 
       .sidebar ul {
@@ -62,27 +86,29 @@
           padding: 0;
       }
 
-      .sidebar ul li a {
-          text-decoration: none;
-          color: #333;
+      .sidebar ul li {
+          padding: 5px 0;
       }
 
-      .sidebar ul li a:hover {
-          color: #007bff;
+      .sidebar ul li a {
+          text-decoration: none;
+          color: #0000EE;
       }
 
       .footer {
-          background-color: #f4f4f4;
-          text-align: center;
-          font-size: 0.9em;
-          border-top: 1px solid #ddd;
+          background-color: #417aa8;
+          color: white;
+          text-align: left;
+          padding: 10px 2pc;
+          clear: both;
+          margin-top: 20px;
       }
     </style>
  </head>
  <body>
   <div class="header">
       <div class="jarak">
-        <h2>Belajar Membuat Layout dengan HTML dan CSS</h2>
+        <h2>Belajar Membuat Website Dengan HTML, CSS dan Layout by VIE</h2>
       </div>
   </div>
 
@@ -95,27 +121,33 @@
     </ul>
   </div>
 
-  <div class="content">
-     <h3>HTML</h3>
-     <p>hyperText Markup Language dan CSS </p>
-     <button>Selengkapnya....</button>
+  <div class="main-container">
+    <div class="content">
+        <div class="post-box">
+            <h3>HTML</h3>
+            <p>HTML atau HyperTeks Markup Language merupakan sebuah bahasa Markup untuk membuat halaman web</p>
+            <button>Selengkapnya....</button>
+        </div>
 
-     <h3>CSS</h3>
-     <p>CSS</p>
-     <button>Selengkapnya....</button>
-  </div>
+        <div class="post-box">
+            <h3>CSS</h3>
+            <p>CSS atau Casdading StyleSheet adalah ... [...]</p>
+            <button>Selengkapnya....</button>
+        </div>
+    </div>
 
-  <div class="sidebar">
-     <h3>Category</h3>
-     <ul>
-       <li><a href="#">HTML</a></li>
-       <li><a href="#">NO CSS</a></li>
-       <li><a href="#">BOOTSTRAP</a></li>
-       <li><a href="#">PHP</a></li>
-       <li><a href="#">CSS</a></li>
-       <li><a href="#">Python</a></li>
-       <li><a href="#">Javascript</a></li>
-     </ul>
+    <div class="sidebar">
+        <h3>Category</h3>
+        <ul>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">NO CSS</a></li>
+          <li><a href="#">BOOTSTRAP</a></li>
+          <li><a href="#">PHP</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">Javascript</a></li>
+        </ul>
+    </div>
   </div>
 
   <div class="footer">
